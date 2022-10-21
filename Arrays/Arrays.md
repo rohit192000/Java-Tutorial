@@ -72,7 +72,7 @@
 6. Every array type implements the interface Cloneable and java.io.Serializable
 
 7. The size of an array cannot be altered once initialized. If try to altered the size of an array an ArrayIndexOutOfBoundsException will be thrown.<sup>[code](./ArrayDecInst.java)</sup>
-    -
+    -e.g.
     ```java
     int[] arr = new int[4];
     int[4] = 0; //will throw error as index start from 0.
