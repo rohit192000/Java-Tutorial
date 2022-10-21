@@ -35,7 +35,8 @@ Here int shows that this array contains only integers and a is common name by al
 
 4. Elements of an array are stored in a contiguous memory(consecutive memory location) and have an indexes starting from 0 to n-1 where n is length of an array.
 
-| 201 202 203 204 205 |
+| 201 | 202 | 203 | 204 | 205 |
+| --- | --- | --- | --- | --- |
 | 2 3 4 5 6 |
 | 0 1 2 3 4 |
 
