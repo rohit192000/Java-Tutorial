@@ -29,9 +29,11 @@ Here int shows that this array contains only integers and a is common name by al
     - int[] arr = {1,3,5,56,76}; 
     - The length of this array determines the length of an created array.
 
-3. Since arrays are objects in java they stored in heap memory.
+3. Since arrays are objects in java they stored in heap memory and we can find the length of an array using object property length.
+    - int[] arr = new int[20];
+    - arr.length; => 20 size of an array.
 
 4. Elements of an array are stored in a contiguous memory(consecutive memory location) and have an indexes starting from 0 to n-1 where n is length of an array.
-    -   | 201 202 203 204 205 | => Consecutive memory locations
-    -   | 2 3 4 5 6 |
-    -   | 0 1 2 3 4 | => Indexes of the array
+    -  | 201 202 203 204 205 | => Consecutive memory locations
+       | 2 3 4 5 6 |
+       | 0 1 2 3 4 | => Indexes of the array
