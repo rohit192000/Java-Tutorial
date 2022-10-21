@@ -117,7 +117,7 @@
     ```
 
 - [Accessing the array elements using for loop.]
-    - Arrays have index from 0 to n-1. We run the loop from 0 to a.length-1.
+    - Arrays have index from 0 to n-1. We run the loop from 0 to array.length-1.
     ```java
     int[] arr = {1,2,3,4,5,6};
     for(int i = 0; i<a.length; ++i){
