@@ -6,7 +6,7 @@ public class ArrayDecInst
     public static void main(String[] args){
         // Declaring an array 
         int[] a;
-        // Initializing an array of size 5
+        // Instantite an array of size 5
         a = new int[5];
         // Insert values into array
         a[0] = 1;
