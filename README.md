@@ -3,7 +3,7 @@
 
 - Arrays are group of like-typed variable referred to by a common name. It means the variables in array are of same data type i.e array of integers, array of strings etc.
 
-e.g int[] a = {5,6,7,8};
+    - e.g int[] a = {5,6,7,8};
 Here int shows that this array contains only integers and a is common name by all the variables in the array referenced.
 
 - Declaring an array
