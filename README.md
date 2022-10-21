@@ -9,8 +9,29 @@ Here int shows that this array contains only integers and a is common name by al
 - Declaring an array
     - data_type[] array_name; or data_type array_name[];
     - data-type can be primitive data_type like int, short, String, char, class.
-    - 
+    - int[] arr; Object[] ao; Collection[] ca;
+    - Here arr, ao, and ca shows that they are an array variable, but no actual array exists. They only shows that this array will hold the array of data_type given. There is no memory allocate to the array. For memory allocation we instantiate the array.
 
+- Instantiating an Array :-
+    - When an araay is declared, only the reference of an array is created. To create memory to the array or link an array_name(arr, ao, ca) with an actual array we are gonna allocate using new and assign it to array.
+    - array_name = new data_type[size]; 
+     e.g. arr = new int[20]; // default value of arr will be 0.
+    - Here new keyword allocate array and memory to array_name and data_type defines the type of data being allocated and size determines the number of elements.
+    - combining declaration and instantiation :- 
+        int[] arr = new int[20];
+- Important points about an array in java:-
 
-- Some important points about java array :-
-1. 
+1. Arrays are dynamically allocated.
+    - Creating an array is an two-way process i.e first, we declare array_variable of desired data_type and second, we allocate the memory to hold the array, using new and assign it to the array_variable(arr, ao, ca etc). Thus all the array in java are dynamically allocated. As new will allocate the memory at the runtime.
+
+2. Array literal can be formed if size of the array and variables of an array are known.
+    - int[] arr = new int[]{1,35,5,4,55}; or
+    - int[] arr = {1,3,5,56,76}; 
+    - The length of this array determines the length of an created array.
+
+3. Since arrays are objects in java they stored in heap memory.
+
+4. Elements of an array are stored in a contiguous memory(consecutive memory location) and have an indexes starting from 0 to n-1 where n is length of an array.
+    -   | 201 202 203 204 205 | => Consecutive memory locations
+    -   | 2 3 4 5 6 |
+    -   | 0 1 2 3 4 | => Indexes of the array
