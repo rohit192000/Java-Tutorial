@@ -100,7 +100,7 @@
 9. The array can also be use as a static field, a method parameters and a local variable.
     -e.g
     ```java
-    public void function_name(int[], int[]){ // array as method parameters.
+    public void method_name(int[] a, int[] b){ // array as method parameters.
         int[] arr; // a local variable
     }
     ```
