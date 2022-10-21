@@ -5,18 +5,26 @@ public class ArrayDecInst
 {
     public static void main(String[] args){
         // Declaring an array 
-        int[] a;
+        int[] arr;
         // Instantiate an array of size 5
-        a = new int[5];
+        arr = new int[5];
         // Insert values into array
-        a[0] = 1;
-        a[1] = 1;
-        a[2] = 1;
-        a[3] = 1;
-        a[4] = 1;
-        // Print the array using for each loop
-        for(int i:a){
-            System.out.println(i+1);
-        }
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+        // Size of an array using property length
+        System.out.println("Size of an array :"+arr.length);
+
+        // Array Literals
+        int[] arr1 = new int[]{1,2,3,4,5,6,7};
+        int[] arr2 = {10,20,30,40,50};
+
+        // assigning arr2 to arr1.
+        arr1 = arr2;
+        System.out.println(arr1[1]+" "arr2[2]); //10 30
+        
+        // System.out.println(arr1[7]); //will give errror
     }
 }

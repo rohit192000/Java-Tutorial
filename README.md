@@ -8,3 +8,4 @@
     - [How the memory allocated to the array?](https://github.com/rohit192000/Java-Tutorial/tree/main/Arrays/Arrays.md)
     - [Are the arrays Dynamic?](https://github.com/rohit192000/Java-Tutorial/tree/main/Arrays/Arrays.md)
     - [Where and when to use in array?](https://github.com/rohit192000/Java-Tutorial/tree/main/Arrays/Arrays.md)
+    - [How to access or traverse the array elements using for loop]

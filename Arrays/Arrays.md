@@ -50,7 +50,7 @@
         // The length of this array determines the length of an created array.
         ``` 
 
-3. Since arrays are objects in java they stored in heap memory and we can find the length of an array using object property length.
+3. Since arrays are objects in java they stored in heap memory and we can find the length of an array using object property length. The size of an array must be specified by int or short not long.
     - e.g.
         ```java
         int[] arr = new int[20];
@@ -66,3 +66,70 @@
 
     - Here 201,202...205 are consecutive memory location
     - 0,1,...4 are the indexes for elements 2,3,4,5,6 respectively.
+
+5. The direct superclass of an array is Object.
+
+6. Every array type implements the interface Cloneable and java.io.Serializable
+
+7. The size of an array cannot be altered once initialized. If try to altered the size of an array an ArrayIndexOutOfBoundsException will be thrown.
+    -
+    ```java
+    int[] arr = new int[4];
+    int[4] = 0; //will throw error as index start from 0.
+    ```
+
+8. Elements of arrays can be accessed randomly because of its storage. Can only access from 0 to n-1 index. If try to access outside the range ArrayIndexOutOfBoundsException will be thrown.
+    -e.g.
+    ```java
+    int[] arr = {1,2,3,4};
+    System.out.println(arr[0]); // 1
+    System.out.println(arr[1]); // 2
+    System.out.println(arr[2]); // 3
+    System.out.println(arr[3]); // 4
+    System.out.println(arr[4]); // will give error
+    ```
+    Output:-
+    ```
+        1
+        2
+        3
+        4
+        Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+    ```
+
+9. The array can also be use as a static field, a method parameters and a local variable.
+    -e.g
+    ```java
+    public void function_name(int[], int[]){ // array as method parameters.
+        int[] arr; // a local variable
+    }
+    ```
+
+10. Arrays can be refernced to another array. 
+    - In this exapmle we declare and instantiate two arrays arr and arr2. Then we assign arr2 to arr. Now arr referred to the arr2. Now we can use arr to access the elements of arr2. Now arr and arr2 both referred to the same array.
+    ```java
+    int[] arr = {1,2,3,4,5,6};
+    int[] arr2 = {10,20,30,40};
+    System.out.println(arr[0]); // 1
+    arr = arr2;
+    System.out.println(arr[0]); // 10
+    System.out.println(arr2[0]); // 10
+    ```
+
+- [Accessing the array elements using for loop.]
+    - Arrays have index from 0 to n-1. We run the loop from 0 to a.length-1.
+    ```java
+    int[] arr = {1,2,3,4,5,6};
+    for(int i = 0; i<a.length; ++i){
+        System.out.println(arr[i]);
+    }
+    ```
+    Output:-
+    ```
+    1
+    2
+    3
+    4
+    5
+    6
+    ```
