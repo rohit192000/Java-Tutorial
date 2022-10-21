@@ -16,7 +16,7 @@ public class ArraysBasicStructure
         a[4] = 1;
         // Print the array using for each loop
         for(int i:a){
-            System.out.println(i);
+            System.out.println(i+1);
         }
     }
 }
