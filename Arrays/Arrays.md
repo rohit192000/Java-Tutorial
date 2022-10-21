@@ -10,7 +10,7 @@
         ```
     - Here int shows that this array contains only integers and a is common name by all the variables in the array referenced.
 
-- Declaring an array<sup>[code](.ArrayDecInst.java)</sup>
+- Declaring an array<sup>[code](./ArrayDecInst.java)</sup>
     - data_type[] array_name; or data_type array_name[];
     - data-type can be primitive data_type like int, short, String, char or non-primitive data_type Object, Collection.
     - 
