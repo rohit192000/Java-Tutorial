@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ArraysBasicStructure
+public class ArrayDecInst
 {
     public static void main(String[] args){
         // Declaring an array 
