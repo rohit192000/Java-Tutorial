@@ -118,7 +118,7 @@
     System.out.println(arr2[0]); // 10
     ```
 
-- [Accessing the array elements using for loop.]<sup>[code](./ArrayLoop.java)</sup>
+- Accessing the array elements using for loop.<sup>[code](./ArrayLoop.java)</sup>
     - 
     - Arrays have index from 0 to n-1. We run the loop from 0 to array.length-1.
     ```java
@@ -136,7 +136,7 @@
     5
     6
     ```
-- [Array of Objects]<sup>[code](./ArrayOfObjects.java)</sup> :-
+- Array of Objects<sup>[code](./ArrayOfObjects.java)</sup> :-
     - 
     ```java
     class_name[] array_name = new class_name[];
