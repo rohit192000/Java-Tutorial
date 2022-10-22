@@ -133,3 +133,46 @@
     5
     6
     ```
+- [Array of Objects]<sup>[code](./ArrayOfObjects.java)</sup> :-
+    - 
+    ```java
+    class_name[] array_name = new class_name[];
+    Student[] arr = new Student[7];
+    ```
+
+    - The Student array contains seven memory spaces each of size of Student class in which address of seven Student object can be stored.
+    - The Student object have to instantiated by the constructor of the Student class, and their reference should be assigned to the array elements in the following way.
+    - Create a constructor of class Student in Student class
+    ```java
+    Student(int a, String b){
+        this.a = a;
+        this.b = b;
+    }
+    ```
+    - Now create and instantiate Student array in another class.
+    ```java
+    Student[] std = new Student[5];
+    // assign objects reference to the elements of the array
+    std[0] = Student(1,"Aman");
+    std[1] = Student(2,"Rahul");
+    std[2] = Student(3,"Naman");
+    std[3] = Student(4,"Sahil");
+    std[4] = Student(5,"Ross");
+    ```
+
+    ```java
+    // print array using for loop
+    for(int i = 0; i<std.length; i++){
+        System.out.println(std[i].a+" "+std[i].b);
+    }
+    ```
+    Output:-
+    ```java
+    1 Aman
+    2 Rahul
+    3 Naman
+    4 Sahil
+    5 Ross
+    ```
+
+- 
