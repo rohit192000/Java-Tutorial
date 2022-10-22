@@ -1,7 +1,7 @@
 # Java-Tutorial
 #### This repository contains the java concepts and the problems related to these concepts.
 #### Follow the links given below to access the readme files of all the concepts.
-- [Arrays](https://github.com/rohit192000/Java-Tutorial/tree/main/Arrays)
+- [Arrays](./Arrays/Arrays.md)
     - 
     - What are arrays?
     - How arrays are declared and instantiated?
