@@ -1,6 +1,6 @@
 # Arrays
 
-#### In this folder you can find all about arrays.
+#### In this file you can find all about arrays.
 
 - Arrays are group of like-typed variable referred to by a common name. It means the variables in array are of same data type i.e array of integers, array of strings etc.
 
