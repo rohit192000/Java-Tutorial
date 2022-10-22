@@ -11,6 +11,7 @@
     - Here int shows that this array contains only integers and a is common name by all the variables in the array referenced.
 
 - Declaring an array<sup>[code](./ArrayDecInst.java)</sup>
+    - 
     - data_type[] array_name; or data_type array_name[];
     - data-type can be primitive data_type like int, short, String, char or non-primitive data_type Object, Collection.
     - 
@@ -22,6 +23,7 @@
     - Here arr, ao, and ca shows that they are an array variable, but no actual array exists. They only shows that this array will hold the array of data_type given. There is no memory allocate to the array. For memory allocation we instantiate the array.
 
 - Instantiating an Array<sup>[code](./ArrayDecInst.java)</sup> :-
+    - 
     - When an array is declared, only the reference of an array is created. To create memory to the array or link an array_name(arr, ao, ca) with an actual array we are gonna allocate using ```new``` keyword and assign it to array.
     - array_name = new data_type[size]; 
      e.g. 
@@ -35,7 +37,7 @@
         int[] arr = new int[20];
         ```
 - Important points about an array in java:-
-
+    - 
 1. Arrays are dynamically allocated.
     - Creating an array is an two-way process i.e first, we declare array_variable of desired data_type and second, we allocate the memory to hold the array, using new and assign it to the array_variable(arr, ao, ca etc). Thus all the array in java are dynamically allocated. As new will allocate the memory at the runtime.
 
@@ -117,6 +119,7 @@
     ```
 
 - [Accessing the array elements using for loop.]<sup>[code](./ArrayLoop.java)</sup>
+    - 
     - Arrays have index from 0 to n-1. We run the loop from 0 to array.length-1.
     ```java
     int[] arr = {1,2,3,4,5,6};
@@ -144,6 +147,8 @@
     - The Student object have to instantiated by the constructor of the Student class, and their reference should be assigned to the array elements in the following way.
     - Create a constructor of class Student in Student class
     ```java
+    public int a;
+    public String b;
     Student(int a, String b){
         this.a = a;
         this.b = b;
@@ -174,5 +179,41 @@
     4 Sahil
     5 Ross
     ```
+    - Take another example, Create another Student constructor with parameter string.
+    - 
+    ```java
+    Student(String b){
+        this.b;
+    }
+    ```
+    - Create an array of object literal in main method of another class.
+    ```java
+    Student[] arr = new Student[]{new Student("Dharma"),new Student("sanvi"),new Student("Rupa"),new Student("Ajay")};
+    for(Student i:arr){
+        System.out.println(i);
+    }
+    ```
+    Output :-
+    ```
+    Student@77459877
+    Student@5b2133b1
+    Student@72ea2f77
+    Student@33c7353a
+    ``` 
 
-- 
+    - If we write ```system.out.println(std[i])```, for it will print the address of the object as above instead of the value of a and b. As we know at ith location we have created an object using new and parameterized constructor. So it will print the reference of the object as elements of the array of object will store the reference of objects in the array.
+    - To print the string we have to convert the string objects. For this we have to return value of b in Student class using function.
+    ```java
+    //In Student Class after constructor
+    @Override
+    public String toString(String b){
+        return b; //Converting String Objects
+    } 
+    ```
+    - After this Output will be
+    ```
+    Dharma
+    sanvi
+    Rupa
+    Ajay
+    ```
