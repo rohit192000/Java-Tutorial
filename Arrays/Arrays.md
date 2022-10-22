@@ -217,3 +217,42 @@
     Rupa
     Ajay
     ```
+
+- Multi-Dimensional Array :- 
+    - These arrays are the array of arrays i.e elements of these arrays are references to anothetr array.
+    - Declare and Instantiate an multi-dimensonal array.
+    ```java
+    int[][] multiDimArray =  new int[m][n];
+    ```
+    - These array represent the matrices of mxn where m is no. of rows and n is the no. of columns.
+    ```java
+    int[][] arr = new int[2][2];
+    arr[0][0] = 1; // first row first column
+    arr[0][1] = 2; // first row second column
+    arr[1][0] = 3; // second row second column
+    arr[1][1] = 4;// second row second column
+    ```
+    - It shows the matrices of 2x2;
+    ```
+       0 1
+    0| 1 2 |
+    1| 3 4 |
+    ```
+    - To access the multi-dimensional array :- {{1,2},{3,4}}
+    arr[0][1] i.e 0 shows the 0th index of array {1,2} and [1] shows the index of the array at 0th index of array i.e 2 of {1,2}.
+    
+    - Examples of multidimensional array :-
+        - [Multi-Dimensional Array of equal no. of row and columns](./MultiDimArray.java) i.e arr[i][i]; where i ia an integer. e.g. 3x3
+        ```
+        1  2  3  4  5
+        6  7  8  9  10
+        11 12 13 14 15
+        ```
+        - Multi-Dimensional Array of unequal no. of rows and columns i.e arr[i][j] where i and j are integers. These arrays are also called [jagged arrays](./JaggedArrays).
+        ```
+        1
+        1 2
+        1 2 3 
+        1 2 3 4
+        1 2 3 4 5
+        ``` 
