@@ -248,7 +248,7 @@
         6  7  8  9  10
         11 12 13 14 15
         ```
-        - Multi-Dimensional Array of unequal no. of rows and columns i.e arr[i][j] where i and j are integers. These arrays are also called [jagged arrays](./JaggedArrays).
+        - Multi-Dimensional Array of unequal no. of rows and columns i.e arr[i][j] where i and j are integers. These arrays are also called [jagged arrays](./JaggedArray).
         ```
         1
         1 2
