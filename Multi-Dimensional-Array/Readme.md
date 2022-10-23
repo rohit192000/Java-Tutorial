@@ -1,6 +1,6 @@
 #### Here I am gonna discuss in detail about the multi dimensional array
 
-- Multi-Dimensional array are the arrays of arrays i.e elements of these arrays store the reference of another array. E.g. [[1,2,3],[3,4,5],[6,7,8]] is an array of length 3 and at 0th index there is an reference to another array [1,2,3] likewise at 1th and 2th index are reference to arrays [3,4,5] and [6,7,8] respectively.
+- Multi-Dimensional arrays are the arrays of arrays i.e elements of these arrays store the reference of another array. E.g. [[1,2,3],[3,4,5],[6,7,8]] is an array of length 3 and at 0th index there is an reference to another array [1,2,3] likewise at 1th and 2th index are reference to arrays [3,4,5] and [6,7,8] respectively.
 
 - Declaration and instantiation of Multi-Dimensionall Array
     - 
