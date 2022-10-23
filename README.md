@@ -15,3 +15,10 @@
     - Arrays of primitive and non-primitive data-type.
     - Types of Arrrays?
     - How to clone an array?
+
+- [Multi-Dimensional Array](./Multi-Dimensional-Array)
+    - 
+    - What are Multi-Dimensional Arrays?
+    - What are the types of these arrays?
+    - How to access elements of these arrays?
+    - When we have to use these type of array?
