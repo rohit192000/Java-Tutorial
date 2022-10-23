@@ -16,4 +16,28 @@
     int[][] twoD_arr = new int[2][2]; // 2D array
     int[][] threeD-arr = new int[3][3][3]; //3D array
     ```
-    
+    - Size of multi dimensional array can be calculated by multiplying the size of all the dimension.
+    i.e ```int [][] arr = new int[3][3];``` can store total of (3x3) i.e 9 elements. ```int[][][] arr = new int[3][4][6];``` can store total of (3x4x6) i.e 72 elemnets.
+
+- [Two Dimensional Array](.././Arrays/Readme.md) :-
+    - 
+    - We have discuss 2d array in Arrays. How to declare and instantiate them. How to access the elements of 2D array.
+    - e.g 
+    ```java
+    int[][] arr = new int[2][2];
+    a[0][0] = 1;
+    a[0][1] = 2;
+    a[1][0] = 3;
+    a[1][1] = 4;
+    for(int i = 0; i<arr.length; i++){
+        for(int j =0; j < arr.length; j++){
+            System.out.print(a[i][j]);
+        }
+        System.out.println(); //next line after printing one row
+    }
+    ```
+    Output :-
+    ```
+    1 2
+    3 4
+    ```
