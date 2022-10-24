@@ -41,3 +41,14 @@
     1 2
     3 4
     ```
+
+- [Three Dimensional array](./ThreeDimArray.java)
+    - It's an complex form of an multi-dimension array.
+    - For better understanding, three dimension array are arrays of 2D array.
+
+    - Declaration and Instantiation :-
+        - ```data_type[][][] array_name = new int[x][y][z];
+                For example : int[][][] arr = new int[10][20][30
+                ```
+    
+    - Initi
