@@ -288,3 +288,58 @@
     - cloneArray -> {{},{}}
     - array == cloneArray // false
     - array[0] == cloneArray[0] // true
+
+- [More Methods to copy an array to another](./CopyMethods.java) :- 
+    - Iterate each element of the given array and copy one element at a time. ```a[i] = b[i]``` After this b are clone of a but different from a as the changes in b doesn't reflect in a.
+
+    - clone method we have done above.
+
+    - using arraycopy() method :-
+        ```
+        public static void arraycopy(Object src, int srcPos, Object dest, int desPos, int length)
+        ```
+        - src is the array we have to clone.
+        - srcPos is index from where cloning will start so you can clone certain index.
+        - dest is the array in which we cloning the array.
+        - desPos index from where cloning elemnts placed
+        - length length of subarray to be copied. 
+        ```java
+        int a[] = { 1, 8, 3 };
+
+        // Creating an array b[] of same size as a[]
+        int b[] = new int[a.length];
+
+        // Copying elements of a[] to b[]
+        System.arraycopy(a, 0, b, 0, 3); 
+        ```
+
+    - using copyOf() method:-
+        - If we want to copy first few elements or full array.
+        ```
+        public static int[] copyOf(int[] original, int newLength)
+        ```
+        - newLength is the length of array to be copied.
+        ```java
+        int[] arr = {1,2,3};
+        int b = Arrays.copyOf(arr,2);
+        ```
+        - b[] = {1,2};
+
+    - using copyOfRange() method :- 
+        - When we need soecified range of array to be copied
+        ```
+        public static int[] copyOfRange(int[] original, int from, int to)
+        ```
+        ```java
+        int[] arr = {1,2,3,4,5,6};
+        int b[] = Arrays.copyOfRange(arr,2,4);
+        ```
+        - b = [3,4,5];
+
+    - Notes:-
+        - 
+        - copy an array by iterating all elements and assigning one by one to another array.
+        - System.arraycopy() is faster than clone() as it uses Java Native Interface(JNI).
+        - For first few elements or full copy use copyOf().
+        - for array to be copied in range use copyOfRange().
+        - The original array will not be affected by operations on copied array.
