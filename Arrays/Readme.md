@@ -257,3 +257,34 @@
         1 2 3 4
         1 2 3 4 5
         ``` 
+
+- Cloning of an array :- 
+    - 
+    - When we clone an array of single-dimension deep copy of array will performed at new array containing copies of the original array elements of the opposed reference i.e they are not equal as elements have different references in memory.
+
+    - For example :-
+    ```java
+    int[] array = {1,2,3,4};
+    int[] cloneArray = array.clone(); // it will make another memory location for cloneArray.
+
+    // array == cloneArray => false as both array references to different memory location
+    ```
+
+    - array -> @ertd12 -> 1 2 3 4 
+    - cloneArray -> @ttd566 -> 1 2 3 4
+    - array and cloneArray both referenced to different memory location.
+    - array != cloneArray but array[0] == cloneArray[0]; 
+
+    - Now for the 2D array, clone method makes the shallow copy as both array and cloneArray referenced to different memory location but elements of both array referenced to same memory location where subarrays are stored.
+
+    - ```int[][] array = {{1,2,3}, {4,5,6}};```
+
+    - ```int[][] cloneArray = array.clone();```
+
+    - array -> 0th , 1th with different referenced than the 
+    cloneArray -> 0th , 1th. But both array and cloneArray share the subarrays i.e array->cloneArray-> {1,2,3},{4,5,6}.
+
+    - array -> {{},{}}  
+    - cloneArray -> {{},{}}
+    - array == cloneArray // false
+    - array[0] == cloneArray[0] // true
